@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600;700&display=swap");
+
+*{
+    text-decoration: none;
+    margin: o;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: url(back.webp);
+}
+.sidebar{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: -250px;
+    background: #042331;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1); 
+    transition: all .5s ease; 
+}
+
+.sidebar header img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+.sidebar header span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.sidebar a{
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    display: table;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+
+}
+.sidebar ul li:hover a{
+    padding-left: 30px;
+    background: #eee;
+    color: #b71c1c;
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+.sidebar .fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar .logout{
+    position: absolute;
+    bottom: 0;
+
+}
+label #btn,label #cancel{
+    position:absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 5px;
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: #b71c1c;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    display: none;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+.nav1{
+    background:transparent ;  
+    height: 80px;
+    width: 100%;
+}
+.logo{
+    color:white;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+.nav1 .lu{
+    float: right;
+    margin-right: 20px;
+}
+.nav1 .lu .il{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.nav1 .lu .il .a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+     text-decoration: none;
+   
+}
+.active, .lu .il .a:hover{
+    background:#9d4edd;
+    font-size: 17px;
+    color: #ffffff;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    
+
+}
+.btnLogin-popup{
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70px;
+    line-height: 20px;
+    float: right;
+    margin-top: 20px;
+    border: none;
+}
+button a{
+    color: white;
+    font-weight: bold;
+    font-size:18px ;
+    text-decoration: none;
+    
+}
